@@ -18,6 +18,8 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+
+
 import {
   About,
   ContactSection,
@@ -74,7 +76,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/MalachiTzuooResume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -92,18 +94,70 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am an Asian-American boy born and raised in the subburbs of Chicago. I finished my studies at Depaul while also taking the 'Atlantis' 
+  dual degree program. In my free time I love to do activities such as weight training, rock climbing and even playing games. I also have 3 cats whom I love dearly.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Chicago, IL', Icon: MapIcon},
+    {label: 'Age', text: '24', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Taiwanese, Hongkongese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Rock Climbing, Gym, Games', Icon: SparklesIcon},
+    {label: 'Study', text: 'Depaul University, Linkoping University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Revature', Icon: BuildingOffice2Icon},
   ],
 };
+
+/**
+ * Resume section
+ */
+
+export const education: TimelineItem[] = [
+  {
+    date: 'November 2022',
+    location: 'Depaul University',
+    title: 'Bachelors in Computer Science',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'July 2021',
+    location: 'Linkoping University',
+    title: 'Bachelors in Business Administration',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+export const certifications: TimelineItem[] = [
+  {
+    date: 'April 2024',
+    location: 'Amazon Web Services',
+    title: 'AWS Certified Developer Associate',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+export const experience: TimelineItem[] = [
+  {
+    date: 'March 2023 - July 2023',
+    location: 'Awesome Development Company',
+    title: 'Senior UX Engineer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'Garage Startup Studio',
+    title: 'Junior bug fixer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+];
 
 /**
  * Skills section
@@ -216,48 +270,6 @@ export const portfolioItems: PortfolioItem[] = [
   
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-];
 
 /**
  * Testimonial section

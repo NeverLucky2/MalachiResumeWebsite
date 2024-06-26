@@ -59,6 +59,16 @@ export interface Stat {
 }
 
 /**
+ * Resume section
+ */
+export interface TimelineItem {
+  date: string;
+  location: string;
+  title: string;
+  content: JSX.Element;
+}
+
+/**
  * Skills section
  */
 
@@ -83,15 +93,6 @@ export interface PortfolioItem {
   image: string | StaticImageData;
 }
 
-/**
- * Resume section
- */
-export interface TimelineItem {
-  date: string;
-  location: string;
-  title: string;
-  content: JSX.Element;
-}
 
 /**
  * Testimonial section
