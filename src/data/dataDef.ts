@@ -95,17 +95,18 @@ export interface PortfolioItem {
 
 
 /**
- * Testimonial section
+ * Reference section
  */
-export interface TestimonialSection {
+export interface ReferenceSection {
   imageSrc?: string | StaticImageData;
-  testimonials: Testimonial[];
+  references: Reference[];
 }
 
-export interface Testimonial {
+export interface Reference {
   image?: string;
-  name: string;
-  text: string;
+  contact: string;
+  contact2?: string;
+  info: string;
 }
 
 /**

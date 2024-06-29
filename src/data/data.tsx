@@ -11,14 +11,12 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import MarioScream from '../images/portfolio/MarioScream.png';
+import TournamentBracket from '../images/portfolio/TournamentBracket.png'
+import RevatureBlogger from '../images/portfolio/RevatureBlogger.png'
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
-
+import AirlinePath from '../images/portfolio/AirlinePath.png';
+import Onion from '../images/OnionLayDown.jpg';
 
 import {
   About,
@@ -29,7 +27,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  ReferenceSection,
   TimelineItem,
 } from './dataDef';
 
@@ -52,7 +50,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  References: 'references',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -66,7 +64,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hello! I'm a <strong className="text-stone-100"> Computer Science </strong> and <strong className="text-stone-100"> Business Administration </strong>
+        Hello and welcome to my website! I'm a <strong className="text-stone-100"> Computer Science </strong> and <strong className="text-stone-100"> Business Administration </strong>
         major based in Chicago looking to be a Software Engineer. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -99,7 +97,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Chicago, IL', Icon: MapIcon},
     {label: 'Age', text: '24', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Taiwanese, Hongkongese', Icon: FlagIcon},
+    {label: 'Nationality', text: 'Taiwanese American', Icon: FlagIcon},
     {label: 'Interests', text: 'Rock Climbing, Gym, Games', Icon: SparklesIcon},
     {label: 'Study', text: 'Depaul University, Linkoping University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Revature', Icon: BuildingOffice2Icon},
@@ -115,13 +113,14 @@ export const education: TimelineItem[] = [
     date: 'November 2022',
     location: 'Depaul University',
     title: 'Bachelors in Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>A private school in the city of Chicago. The computer science program covers a wide range of topics, 
+    including multiple programming languages, data structures, algorithms, SQL and software design.</p>,
   },
   {
     date: 'July 2021',
     location: 'Linkoping University',
     title: 'Bachelors in Business Administration',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>Business Degree with the dual degree program 'Atlantis' which starts at INSEEC in France and finishes at Linkoping university in Sweden.</p>,
   },
 ];
 
@@ -130,30 +129,25 @@ export const certifications: TimelineItem[] = [
     date: 'April 2024',
     location: 'Amazon Web Services',
     title: 'AWS Certified Developer Associate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>● Covers AWS architecture best practices for developing, deploying, and debugging cloud-based applications. </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
     date: 'March 2023 - July 2023',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    location: 'Reston, VA',
+    title: 'Ruby Full Stack Software Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        ● Gained proficiency in full-stack development by crafting web applications, notably a blogging app which allows
+        users to share posts online and interact with other users in real time, using Ruby on Rails for the backend,
+        complemented by JavaScript/TypeScript, HTML and CSS for React-powered frontend.<br></br><br></br>
+        ● Employed PostgreSQL as the primary database solution, while facilitating JSON-based data exchange between
+        frontend and backend through Axios and RESTful APIs to create an AWS deployed web application with RDS. <br></br><br></br>
+        ● Designed and implemented CI/CD pipelines from scratch within GitHub, improving efficiency by automating code
+        deployment and streamlining workflows across multiple repositories.
+
       </p>
     ),
   },
@@ -168,7 +162,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
-        level: 10,
+        level: 9,
       },
       {
         name: 'Cantonese',
@@ -185,15 +179,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 4,
       },
       {
         name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
+        level: 5,
       },
     ],
   },
@@ -201,33 +191,33 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
+        name: 'Ruby on Rails',
         level: 5,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Java',
+        level: 7,
+      },
+      {
+        name: 'Python',
+        level: 6,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Cloud Computing (AWS)',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'EC2',
+        level: 7,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'RDS',
+        level: 7,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'S3',
+        level: 7,
       },
     ],
   },
@@ -238,59 +228,52 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
+    title: 'Mario Screaming bot',
+    description: 'Mario Screaming bot is a side project made in Javascript for syntax practice and entertainment. Uses token authentication for usage. Hosted on Replit and uses uptimerobot to maintain bot uptime autonomously. Used for miscellaneous functions, such as joining voice chat to play audio, altering texts, etc.',
+    url: 'https://replit.com/@MalachiTzuoo',
+    image: MarioScream,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
+    title: 'Team Seeder',
+    description: 'This is a tournament bracket generator created for my senior capstone project. Though depreciated, allows for login, creation of teams and can find other teams based on id to automatically seed players.',
+    url: 'http://3.19.130.110/',
+    image: TournamentBracket,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
+    title: 'Airline Shortest Path',
+    description: `Airline Shortest Path is a python program used to demonstrate the use of dijkstra's algorithm. User would enter the number of terminals + weight and the program would find the shortest possible path between 2 specified terminals.`,
+    url: 'https://github.com/NeverLucky2/AirlineShortestPath',
+    image: AirlinePath,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
+    title: 'Revature Blogger',
+    description: 'Revature Blogger is a web and Internet-facing app made for Revature. Also depreciated, individuals can create accounts and share blog contents with the public. Primary role on the team being in the DevOps department during phases of design, development, testing and implementation by writing CI/CD pipelines for Github Actions to automatically build and test code with every commit to Github. Utilizes primarily Ruby on rails, REST API, React, AWS, GitHub and Extreme Programming agile methodology.',
+    url: 'https://github.com/NeverLucky2/TzuooReimbursementPlatformProject',
+    image: RevatureBlogger,
   },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  
 ];
 
 
 /**
- * Testimonial section
+ * Reference section
  */
-export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
-  testimonials: [
+export const reference: ReferenceSection = {
+  imageSrc: Onion,
+  references: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      contact: 'Email: yusufraza261@gmail.com',
+      contact2: 'Number: 610-517-0264',
+      info: 'Yusef Raza, Program Director at Alpha Omega Integration',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      contact: 'Email: august.duet@revature.com',
+      contact2: 'Number: 585-899-0837',
+      info: 'August Duet, Principal Lead Trainer at Revature',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      contact: 'Email: marci.parrish@alphaomega.com',
+      contact2: 'Number: 417-726-249',
+      info: 'Marci Parrish, Talent Acquisition Lead at Alpha Omega Integration',
     },
   ],
 };
@@ -301,7 +284,7 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'My contact and location info:',
   items: [
     {
       type: ContactType.Email,
@@ -311,6 +294,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Location,
       text: 'Chicago, IL',
+      href: 'https://maps.app.goo.gl/MEW9rf9fr5S7dbgJ6',
     },
     {
       type: ContactType.Github,
