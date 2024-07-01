@@ -9,7 +9,6 @@
     "dev": "yarn compile && yarn next dev",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "yarn next start",
-    "export": "next export",
     "sitemap": "yarn next-sitemap"
   },
 
