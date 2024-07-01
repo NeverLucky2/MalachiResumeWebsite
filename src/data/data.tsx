@@ -67,7 +67,7 @@ export const heroData: Hero = {
         major based in Chicago looking to be a Software Engineer. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        This is a react website hosted with AWS Amplify! Enjoy your stay and hope you learn a bit more about me!
+        This is a react website hosted statically with AWS! Enjoy your stay and hope you learn a bit more about me!
       </p>
     </>
   ),
