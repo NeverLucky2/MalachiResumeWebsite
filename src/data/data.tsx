@@ -35,7 +35,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Malachi Tzuoo Resume',
-  description: "Malachi Tzuoo's next.js website (built with Tim Baker's react resume template)",
+  description: "Malachi Tzuoo's react.js website (built with Tim Baker's react resume template)",
 };
 
 /**
@@ -67,7 +67,7 @@ export const heroData: Hero = {
         major based in Chicago looking to be a Software Engineer. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        This is a next.js website hosted statically with AWS! Enjoy your stay and hope you learn a bit more about me!
+        This is a react.js website hosted statically with AWS! Enjoy your stay and hope you learn a bit more about me!
       </p>
     </>
   ),
