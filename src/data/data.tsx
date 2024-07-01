@@ -14,7 +14,7 @@ import heroImage from '../images/header-background.webp';
 import Onion from '../images/OnionLayDown.jpg';
 import AirlinePath from '../images/portfolio/AirlinePath.png';
 import MarioScream from '../images/portfolio/MarioScream.png';
-import RevatureBlogger from '../images/portfolio/RevatureBlogger.png'
+import ReimbursementWebsite from '../images/portfolio/ReimbursementWebsite.png'
 import TournamentBracket from '../images/portfolio/TournamentBracket.png'
 import profilepic from '../images/profilepic.jpg';
 import {
@@ -245,10 +245,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: AirlinePath,
   },
   {
-    title: 'Revature Blogger',
-    description: 'Revature Blogger is a web and Internet-facing app made for Revature. Also depreciated, individuals can create accounts and share blog contents with the public. Primary role on the team being in the DevOps department during phases of design, development, testing and implementation by writing CI/CD pipelines for Github Actions to automatically build and test code with every commit to Github. Utilizes primarily Ruby on rails, REST API, React, AWS, GitHub and Extreme Programming agile methodology.',
-    url: 'https://github.com/NeverLucky2/TzuooReimbursementPlatformProject',
-    image: RevatureBlogger,
+    title: 'Reimbursement App',
+    description: 'Reimbursement app is a web and Internet-facing app made for Revature. Also depreciated, individuals can create accounts, reimbursement requests and view their submitted requests while managers can respond to the requests by completing the requests and/or delete them. Utilizes primarily Ruby on rails, REST API, React, AWS, GitHub and Extreme Programming agile methodology.',
+    url: 'http://mm-ror-project2-bucket.s3-website-us-east-1.amazonaws.com/',
+    image: ReimbursementWebsite,
   },
 ];
 
