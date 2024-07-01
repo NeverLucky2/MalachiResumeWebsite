@@ -35,7 +35,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Malachi Tzuoo Resume',
-  description: "Malachi Tzuoo's website built with Tim Baker's react resume template",
+  description: "Malachi Tzuoo's next.js website (built with Tim Baker's react resume template)",
 };
 
 /**
@@ -67,7 +67,7 @@ export const heroData: Hero = {
         major based in Chicago looking to be a Software Engineer. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        This is a react website hosted statically with AWS! Enjoy your stay and hope you learn a bit more about me!
+        This is a next.js website hosted statically with AWS! Enjoy your stay and hope you learn a bit more about me!
       </p>
     </>
   ),
@@ -91,7 +91,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am an Asian-American boy born and raised in the subburbs of Chicago. I finished my studies at Depaul while also taking the 'Atlantis' 
+  description: `I am an Asian-American boy born and raised in the suburbs of Chicago. I finished my studies at Depaul while also taking the 'Atlantis' 
   dual degree program. In my free time I love to do activities such as weight training, rock climbing and even playing games. I also have 3 cats whom I love dearly.`,
   aboutItems: [
     {label: 'Location', text: 'Chicago, IL', Icon: MapIcon},

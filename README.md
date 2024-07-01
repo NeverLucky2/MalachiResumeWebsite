@@ -1,1 +1,1 @@
-Resume for Malachi Tzuoo
+Resume website for Malachi Tzuoo made with next.js 
