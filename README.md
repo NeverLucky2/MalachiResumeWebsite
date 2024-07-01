@@ -1,1 +1,1 @@
-Resume website for Malachi Tzuoo made with react.js 
+Resume website for Malachi Tzuoo made with next.js 
