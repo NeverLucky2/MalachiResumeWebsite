@@ -11,13 +11,12 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import MarioScream from '../images/portfolio/MarioScream.png';
-import TournamentBracket from '../images/portfolio/TournamentBracket.png'
-import RevatureBlogger from '../images/portfolio/RevatureBlogger.png'
-import profilepic from '../images/profilepic.jpg';
-import AirlinePath from '../images/portfolio/AirlinePath.png';
 import Onion from '../images/OnionLayDown.jpg';
-
+import AirlinePath from '../images/portfolio/AirlinePath.png';
+import MarioScream from '../images/portfolio/MarioScream.png';
+import RevatureBlogger from '../images/portfolio/RevatureBlogger.png'
+import TournamentBracket from '../images/portfolio/TournamentBracket.png'
+import profilepic from '../images/profilepic.jpg';
 import {
   About,
   ContactSection,
@@ -25,9 +24,9 @@ import {
   Hero,
   HomepageMeta,
   PortfolioItem,
+  ReferenceSection,
   SkillGroup,
   Social,
-  ReferenceSection,
   TimelineItem,
 } from './dataDef';
 
