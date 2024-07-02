@@ -128,7 +128,9 @@ export const certifications: TimelineItem[] = [
     date: 'April 2024',
     location: 'Amazon Web Services',
     title: 'AWS Certified Developer Associate',
-    content: <p>● Covers AWS architecture best practices for developing, deploying, and debugging cloud-based applications. </p>,
+    content: <p>● Covers AWS architecture, the best practices for developing, deploying, and debugging cloud-based applications, 
+      and over 200 hours of hands-on lab sessions including Lambda function, Dynamo DB, SNS/SQS, Kinesis, CodePipeline and many 
+      other modern DevOps practices hosted through AWS managed services.</p>,
   },
 ];
 
@@ -146,7 +148,6 @@ export const experience: TimelineItem[] = [
         frontend and backend through Axios and RESTful APIs to create an AWS deployed web application with RDS. <br></br><br></br>
         ● Designed and implemented CI/CD pipelines from scratch within GitHub, improving efficiency by automating code
         deployment and streamlining workflows across multiple repositories.
-
       </p>
     ),
   },
