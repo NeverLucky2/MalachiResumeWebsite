@@ -13,6 +13,7 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import Onion from '../images/OnionLayDown.jpg';
 import AirlinePath from '../images/portfolio/AirlinePath.png';
+import AstriteGG from '../images/portfolio/Astritegg.png'
 import MarioScream from '../images/portfolio/MarioScream.png';
 import ReimbursementWebsite from '../images/portfolio/ReimbursementWebsite.png'
 import TournamentBracket from '../images/portfolio/TournamentBracket.png'
@@ -43,12 +44,12 @@ export const homePageMeta: HomepageMeta = {
  */
 export const SectionId = {
   Hero: 'hero',
-  About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
+  About: 'about',
   References: 'references',
 } as const;
 
@@ -86,22 +87,6 @@ export const heroData: Hero = {
   ],
 };
 
-/**
- * About section
- */
-export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: `I am an Asian-American boy born and raised in the suburbs of Chicago. I finished my studies at Depaul while also taking the 'Atlantis' 
-  dual degree program. In my free time I love to do activities such as weight training, rock climbing and even playing games. I also have 3 cats whom I love dearly.`,
-  aboutItems: [
-    {label: 'Location', text: 'Chicago, IL', Icon: MapIcon},
-    {label: 'Age', text: '24', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Taiwanese American', Icon: FlagIcon},
-    {label: 'Interests', text: 'Rock Climbing, Gym, Games', Icon: SparklesIcon},
-    {label: 'Study', text: 'Depaul University, Linkoping University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Revature', Icon: BuildingOffice2Icon},
-  ],
-};
 
 /**
  * Resume section
@@ -128,25 +113,40 @@ export const certifications: TimelineItem[] = [
     date: 'April 2024',
     location: 'Amazon Web Services',
     title: 'AWS Certified Developer Associate',
-    content: <p>● Covers AWS architecture, the best practices for developing, deploying, and debugging cloud-based applications, 
-      and over 200 hours of hands-on lab sessions including Lambda function, Dynamo DB, SNS/SQS, Kinesis, CodePipeline and many 
+    content: <p>
+      • Covers AWS architecture, the best practices for developing, deploying, and debugging cloud-based applications.<br></br>
+      • Over 200 hours of hands-on lab sessions including Lambda function, Dynamo DB, SNS/SQS, Kinesis, CodePipeline and many 
       other modern DevOps practices hosted through AWS managed services.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
+    date: 'June 2023 - Now',
+    location: 'Remote',
+    title: 'Astro Front-end Software Developer',
+    content: (
+      <p>
+        • Develop and maintain Astrite.gg, a website built with Astro, serving 10,000+ monthly users.<br></br>
+        • Implemented responsive and intuitive user interfaces using TypeScript and modern front-end technologies.<br></br>
+        • Collaborated with team members to ensure seamless integration of front-end components with back-end systems.<br></br>
+        • Utilized version control with Github for efficient code management and collaboration.<br></br>
+        • Conducted regular code reviews and refactoring to maintain code quality and efficiency.
+      </p>
+    ),
+  },
+  {
     date: 'March 2023 - July 2023',
     location: 'Reston, VA',
     title: 'Ruby Full Stack Software Developer',
     content: (
       <p>
-        ● Gained proficiency in full-stack development by crafting web applications, notably a blogging app which allows
+        • Gained proficiency in full-stack development by crafting web applications, notably a blogging app which allows
         users to share posts online and interact with other users in real time, using Ruby on Rails for the backend,
-        complemented by JavaScript/TypeScript, HTML and CSS for React-powered frontend.<br></br><br></br>
-        ● Employed PostgreSQL as the primary database solution, while facilitating JSON-based data exchange between
-        frontend and backend through Axios and RESTful APIs to create an AWS deployed web application with RDS. <br></br><br></br>
-        ● Designed and implemented CI/CD pipelines from scratch within GitHub, improving efficiency by automating code
+        complemented by JavaScript/TypeScript, HTML and CSS for React-powered frontend.<br></br>
+        • Employed PostgreSQL as the primary database solution, while facilitating JSON-based data exchange between
+        frontend and backend through Axios and RESTful APIs to create an AWS deployed web application with RDS.<br></br>
+        • Designed and implemented CI/CD pipelines from scratch within GitHub, improving efficiency by automating code
         deployment and streamlining workflows across multiple repositories.
       </p>
     ),
@@ -162,15 +162,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
-        level: 9,
+        level: 10,
       },
       {
         name: 'Cantonese',
         level: 4,
       },
       {
-        name: 'Mandrin',
-        level: 3,
+        name: 'Mandarin',
+        level: 4,
       },
     ],
   },
@@ -179,10 +179,14 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 4,
+        level: 6,
       },
       {
         name: 'Typescript',
+        level: 7,
+      },
+      {
+        name: 'Astro',
         level: 5,
       },
     ],
@@ -192,11 +196,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Ruby on Rails',
-        level: 5,
+        level: 6,
       },
       {
         name: 'Java',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Python',
@@ -209,15 +213,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'EC2',
-        level: 7,
+        level: 8,
       },
       {
         name: 'RDS',
-        level: 7,
+        level: 8,
       },
       {
         name: 'S3',
-        level: 7,
+        level: 8,
       },
     ],
   },
@@ -227,6 +231,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Astrite.gg',
+    description: 'Astrite.gg is a tracker for hit mobile/pc game Wuthering Waves. The website runs a script to take your gacha history from the game and analyzes the data into nice organized pages.',
+    url: 'https://astrite.gg/',
+    image: AstriteGG,
+  },
   {
     title: 'Mario Screaming bot',
     description: 'Mario Screaming bot is a side project made in Javascript for syntax practice and entertainment. Uses token authentication for usage. Hosted on Replit and uses uptimerobot to maintain bot uptime autonomously. Used for miscellaneous functions, such as joining voice chat to play audio, altering texts, etc.',
@@ -261,11 +271,6 @@ export const reference: ReferenceSection = {
   imageSrc: Onion,
   references: [
     {
-      contact: 'Email: yusufraza261@gmail.com',
-      contact2: 'Number: 610-517-0264',
-      info: 'Yusef Raza, Program Director at Alpha Omega Integration',
-    },
-    {
       contact: 'Email: august.duet@revature.com',
       contact2: 'Number: 585-899-0837',
       info: 'August Duet, Principal Lead Trainer at Revature',
@@ -275,6 +280,28 @@ export const reference: ReferenceSection = {
       contact2: 'Number: 417-726-249',
       info: 'Marci Parrish, Talent Acquisition Lead at Alpha Omega Integration',
     },
+    {
+      contact: 'Email: yusufraza261@gmail.com',
+      contact2: 'Number: 610-517-0264',
+      info: 'Yusef Raza, Program Director at Alpha Omega Integration',
+    },
+  ],
+};
+
+/**
+ * About section
+ */
+export const aboutData: About = {
+  profileImageSrc: profilepic,
+  description: `I am an Asian-American boy born and raised in the suburbs of Chicago. I finished my studies at Depaul while also taking the 'Atlantis' 
+  dual degree program. In my free time I love to do activities such as weight training, rock climbing and even playing games. I also have 3 cats whom I love dearly.`,
+  aboutItems: [
+    {label: 'Location', text: 'Chicago, IL', Icon: MapIcon},
+    {label: 'Age', text: '24', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Taiwanese American', Icon: FlagIcon},
+    {label: 'Interests', text: 'Rock Climbing, Gym, Games', Icon: SparklesIcon},
+    {label: 'Study', text: 'Depaul University, Linkoping University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Revature', Icon: BuildingOffice2Icon},
   ],
 };
 

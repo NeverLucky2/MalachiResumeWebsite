@@ -34,20 +34,6 @@ interface HeroActionItem {
   Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
 }
 
-/**
- * About section
- */
-export interface About {
-  profileImageSrc?: string;
-  description: string;
-  aboutItems: AboutItem[];
-}
-
-export interface AboutItem {
-  label: string;
-  text: string;
-  Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
-}
 
 /**
  * Stat section
@@ -107,6 +93,21 @@ export interface Reference {
   contact: string;
   contact2?: string;
   info: string;
+}
+
+/**
+ * About section
+ */
+export interface About {
+  profileImageSrc?: string;
+  description: string;
+  aboutItems: AboutItem[];
+}
+
+export interface AboutItem {
+  label: string;
+  text: string;
+  Icon?: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, 'ref'>>;
 }
 
 /**
