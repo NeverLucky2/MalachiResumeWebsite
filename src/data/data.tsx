@@ -123,13 +123,15 @@ export const certifications: TimelineItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'June 2023 - Now',
+    company: 'Astrite.gg',
     location: 'Remote',
-    title: 'Astro Front-end Software Developer',
+    title: 'Astro Front-end Software Developer Intern',
     content: (
       <p>
         • Develop and maintain Astrite.gg, a website built with Astro, serving 10,000+ monthly users.<br></br>
         • Implemented responsive and intuitive user interfaces using TypeScript and modern front-end technologies.<br></br>
-        • Collaborated with team members to ensure seamless integration of front-end components with back-end systems.<br></br>
+        • Collaborated with team members to ensure seamless integration of front-end components built with React and Tailwind  hosted on Fly.io, 
+        with back-end systems utilizing Supabase, PostgreSQL, and Drizzle ORM.<br></br>
         • Utilized version control with Github for efficient code management and collaboration.<br></br>
         • Conducted regular code reviews and refactoring to maintain code quality and efficiency.
       </p>
@@ -137,6 +139,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'March 2023 - July 2023',
+    company: 'Revature',
     location: 'Reston, VA',
     title: 'Ruby Full Stack Software Developer',
     content: (
@@ -297,11 +300,11 @@ export const aboutData: About = {
   dual degree program. In my free time I love to do activities such as weight training, rock climbing and even playing games. I also have 3 cats whom I love dearly.`,
   aboutItems: [
     {label: 'Location', text: 'Chicago, IL', Icon: MapIcon},
-    {label: 'Age', text: '24', Icon: CalendarIcon},
+    {label: 'Age', text: '25', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Taiwanese American', Icon: FlagIcon},
     {label: 'Interests', text: 'Rock Climbing, Gym, Games', Icon: SparklesIcon},
     {label: 'Study', text: 'Depaul University, Linkoping University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Revature', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'Astrite.gg', Icon: BuildingOffice2Icon},
   ],
 };
 

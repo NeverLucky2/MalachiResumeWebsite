@@ -50,6 +50,7 @@ export interface Stat {
 export interface TimelineItem {
   date: string;
   location: string;
+  company?: string;
   title: string;
   content: JSX.Element;
 }

@@ -12,7 +12,7 @@ export const headerID = 'headerNav';
 const Header: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
-    () => [SectionId.Resume, SectionId.Portfolio, SectionId.References, SectionId.About, SectionId.Contact],
+    () => [SectionId.Resume, SectionId.Portfolio, SectionId.References, SectionId.Contact, SectionId.About],
     [],
   );
 
